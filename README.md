@@ -22,6 +22,10 @@ By migrating CI/CD pipelines to our Kubernetes cluster, we eliminated the need f
 You can get configuration files in my github: https://github.com/VictorTrapenok/karpenter-for-gitlabrunner
 
 
-- Helm chart for gitlab runner: https://gitlab.com/gitlab-org/charts/gitlab-runner
-- karpenter autoscaller: https://karpenter.sh
-- karpenter configuration https://github.com/VictorTrapenok/karpenter-for-gitlabrunner/blob/main/karpenter-coniguration.yaml
+- Helm chart for gitlab runner: [gitlab-runner](https://gitlab.com/gitlab-org/charts/gitlab-runner)
+- karpenter autoscaller: [karpenter](https://karpenter.sh)
+- karpenter configuration [karpenter-coniguration.yaml](https://github.com/VictorTrapenok/karpenter-for-gitlabrunner/blob/main/karpenter-coniguration.yaml)
+
+# Any help?
+
+Please ping me in [linkedin](https://www.linkedin.com/in/victor-trapenok/) if you need any help. I am hashtag Open to work 
