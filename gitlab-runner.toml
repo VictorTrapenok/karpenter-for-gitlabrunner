@@ -1,0 +1,23 @@
+[[runners]]
+ [runners.kubernetes]
+ namespace = "{{.Release.Namespace}}"
+ tls_verify = false
+ image = "docker:20.10.16"
+ cpu_limit = "6"
+ memory_limit = "8Gi"
+ service_cpu_limit = "6"
+ service_memory_limit = "5Gi"
+ helper_cpu_limit = "3500m"
+ helper_memory_limit = "4000Mi"
+ cpu_request = "1"
+ helper_image = "public.ecr.aws/n2j0t2f9/gitlab-runner:runner-2"
+ memory_request = "1Gi"
+ service_cpu_request = "1"
+ service_memory_request = "1Gi"
+ helper_cpu_request = "500m"
+ helper_memory_request = "1000Mi"
+ privileged = true 
+ [runners.kubernetes.pod_labels]
+ 	"ui-name" = "ci-cd-job"
+ [runners.kubernetes.node_tolerations]
+ "dp.tag/application=gitlab-runners" = "NoSchedule"
