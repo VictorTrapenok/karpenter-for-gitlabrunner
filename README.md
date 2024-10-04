@@ -1,4 +1,5 @@
-# How I Reduced CI/CD Infrastructure Costs by Threefold at Nanoheal
+# How I Reduced CI/CD infrastructure costs at Nanoheal
+
 I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.
 
 At Nanoheal, we have a high level of developer activity, and CI/CD pipelines runs a critical role in our DevOps practices for continuous delivery.
@@ -19,9 +20,6 @@ Once the pipeline completes, the node remains empty, thanks to the properly conf
 By migrating CI/CD pipelines to our Kubernetes cluster, we eliminated the need for three always-on virtual machines. Instead, we now run 1–2 spot nodes in the cluster, running ~60 hours per week, drastically cutting down our infrastructure costs.
 
 You can get configuration files in my github: https://github.com/VictorTrapenok/karpenter-for-gitlabrunner
-
-
-
 
 
 - Helm chart for gitlab runner: https://gitlab.com/gitlab-org/charts/gitlab-runner
