@@ -20,4 +20,11 @@
  [runners.kubernetes.pod_labels]
  	"ui-name" = "ci-cd-job"
  [runners.kubernetes.node_tolerations]
- "dp.tag/application=gitlab-runners" = "NoSchedule"
+ "dp.tag/application=gitlab-runners" = "NoSchedule" 
+ [runners.kubernetes.affinity]
+ 	[runners.kubernetes.affinity.node_affinity.required_during_scheduling_ignored_during_execution]
+ 	[[runners.kubernetes.affinity.node_affinity.required_during_scheduling_ignored_during_execution.node_selector_terms]]
+ 			[[runners.kubernetes.affinity.node_affinity.required_during_scheduling_ignored_during_execution.node_selector_terms.match_expressions]]
+ key = "dp.tag/application"
+ operator = "In"
+ values = ["gitlab-runners"]
