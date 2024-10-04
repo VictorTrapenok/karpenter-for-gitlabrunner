@@ -28,4 +28,4 @@ You can get configuration files in my github: https://github.com/VictorTrapenok/
 
 # Any help?
 
-Please ping me in [linkedin](https://www.linkedin.com/in/victor-trapenok/) if you need any help. I am hashtag Open to work 
+Please ping me in [linkedin](https://www.linkedin.com/in/victor-trapenok/) if you need any help. I am open to work.
